@@ -1,0 +1,141 @@
+.booking-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  background-color: #faf8f4;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.booking-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  color: #5c3d2e;
+  margin-bottom: 0.5rem;
+}
+
+.booking-card p {
+  text-align: center;
+  color: #6b5c4b;
+  margin-bottom: 2rem;
+}
+
+.booking-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #4a2c1d;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.booking-form input:focus {
+  border-color: #8b5a2b;
+}
+
+.booking-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.book-button,
+.back-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.book-button {
+  background-color: #8b5a2b;
+  color: #fff;
+}
+
+.book-button:hover {
+  background-color: #704423;
+}
+
+.back-button {
+  background-color: #e7dccb;
+  color: #4a2c1d;
+}
+
+.back-button:hover {
+  background-color: #d4c0a5;
+}
+/* Popup styles */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.success-message {
+  text-align: center;
+  padding: 20px;
+}
+
+.success-message h3 {
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.success-message p {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .booking-card {
+    padding: 1.5rem;
+  }
+
+  .booking-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .back-button,
+  .book-button {
+    width: 100%;
+  }
+}
