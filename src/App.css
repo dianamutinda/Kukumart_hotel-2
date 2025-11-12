@@ -1,0 +1,28 @@
+/* Reset default margins/paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make body and main full width */
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+/* Main content full width */
+main {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove container constraints in pages */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}

@@ -1,3 +1,9 @@
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
 .menu-section {
   padding: 4rem 1.5rem;
   background: #faf8f4;
