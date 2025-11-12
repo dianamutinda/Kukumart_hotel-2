@@ -1,0 +1,130 @@
+.rooms-section {
+  padding: 60px 20px;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: 700;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.room-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.image-container {
+  height: 200px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.room-card:hover img {
+  transform: scale(1.05);
+}
+
+.room-info {
+  padding: 20px;
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.room-info h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.room-info p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.price {
+  margin-bottom: 18px;
+  font-weight: 600;
+  color: #2d6a4f;
+}
+
+.price small {
+  display: block;
+  color: #666;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.book-button {
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-button:hover {
+  background-color: #1b4332;
+  transform: scale(1.03);
+}
+
+.book-button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .room-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .room-info p {
+    font-size: 0.9rem;
+  }
+
+  .price {
+    font-size: 0.95rem;
+  }
+
+  .book-button {
+    font-size: 0.95rem;
+  }
+}
