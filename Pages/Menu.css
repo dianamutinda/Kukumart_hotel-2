@@ -1,0 +1,58 @@
+.menu-section {
+  padding: 4rem 1.5rem;
+  background: #faf8f4;
+  text-align: center;
+  color: #3a2c23;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.3rem;
+  color: #5c3d2e;
+  margin-bottom: 0.8rem;
+}
+
+.menu-section p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: #5a5146;
+  line-height: 1.8;
+}
+
+.menu-viewer {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+}
+
+.download-menu-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.4rem;
+  background: #a67c52;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.download-menu-btn:hover {
+  background: #5c3d2e;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .menu-section h2 {
+    font-size: 1.9rem;
+  }
+
+  .menu-viewer iframe {
+    height: 600px;
+  }
+}
