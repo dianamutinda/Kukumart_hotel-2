@@ -1,0 +1,172 @@
+/* ========== ABOUT SECTION ========== */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 1.5rem;
+  background-color: #faf8f4;
+  color: #3a2c23;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-text {
+  flex: 1 1 480px;
+  max-width: 600px;
+}
+
+.about-text h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.95rem;
+  color: #a67c52;
+  margin-bottom: 0.5rem;
+}
+
+.about-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #5c3d2e;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #5a5146;
+}
+
+.about-image {
+  flex: 1 1 420px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  transition: transform 0.5s ease, box-shadow 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ========== MISSION & VISION SECTION ========== */
+.mission-vision {
+  background-color: #f5eee8;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.mission-vision .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mission, .vision {
+  flex: 1 1 400px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission:hover, .vision:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mission h2, .vision h2 {
+  font-family: "Playfair Display", serif;
+  color: #5c3d2e;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.mission p, .vision p {
+  color: #5a5146;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ========== TEAM SECTION ========== */
+.team {
+  background-color: #faf8f4;
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.team .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.team h2 {
+  font-family: "Playfair Display", serif;
+  color: #5c3d2e;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.team p {
+  color: #5a5146;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 750px;
+  margin: 0 auto 2rem;
+}
+
+.team-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.team-images img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.team-images img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .mission-vision .container {
+    flex-direction: column;
+  }
+
+  .mission, .vision {
+    padding: 1.8rem;
+  }
+
+  .team h2 {
+    font-size: 1.8rem;
+  }
+}
