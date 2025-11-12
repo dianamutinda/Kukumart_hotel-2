@@ -1,0 +1,122 @@
+.gallery {
+  padding: 4rem 1.5rem;
+  background-color: #faf8f4;
+  color: #3a2c23;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.gallery-txt {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.gallery-txt h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  color: #5c3d2e;
+  margin-bottom: 1rem;
+}
+
+.gallery-txt p {
+  font-size: 1rem;
+  color: #5a5146;
+  line-height: 1.7;
+}
+
+/* Video Section */
+.gallery-video {
+  margin: 2rem auto 4rem;
+  max-width: 900px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Image Grid */
+.gallery-imgs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* Each Image Wrapper */
+.gallery-item {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Overlay Text on Hover */
+.hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease;
+  text-align: center;
+}
+
+.hover-overlay h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.gallery-item:hover .hover-overlay {
+  opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .gallery-txt h2 {
+    font-size: 2rem;
+  }
+
+  .gallery-video {
+    margin-bottom: 2rem;
+  }
+
+  .gallery-item img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-imgs {
+    gap: 1rem;
+  }
+
+  .gallery-item img {
+    height: 180px;
+  }
+}
