@@ -1,40 +1,32 @@
-/* ================= HERO SECTION ================= */
-/* Reset default margins/paddings */
+/* ================= GLOBAL RESET ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Make body and main full width */
 html, body {
   width: 100%;
   min-height: 100%;
+  overflow-x: hidden;
 }
 
-/* Main content full width */
 main {
   width: 100%;
   max-width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
-/* Remove container constraints in pages */
 .container {
   width: 100%;
   max-width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
-
+/* ================= HERO SECTION ================= */
 .hero {
-  padding: 180px 20px;
-  position: relative;
+  padding: 160px 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../assets/IMG_2460.png") center/cover no-repeat;
-  height: 87vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,15 +36,25 @@ main {
 }
 
 .hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: -5px;
+  font-size: 2.8rem;
   color: #ffcc00;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .hero p {
   max-width: 700px;
-  margin: auto;
-  margin-bottom: 25px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f2f2f2;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .btn {
@@ -64,6 +66,8 @@ main {
   border-radius: 10px;
   text-decoration: none;
   transition: 0.3s;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -82,6 +86,11 @@ main {
   flex-wrap: wrap;
 }
 
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
 .about-text h3 {
   color: #e63946;
   text-transform: uppercase;
@@ -91,29 +100,24 @@ main {
 .about-text h2 {
   color: #111;
   margin: 15px 0;
+  font-size: 1.8rem;
 }
 
 .about-text p {
   color: #333;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 20px;
-}
-
-.about-text a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: capitalize;
-  margin-top: 2rem;
 }
 
 .about-image {
   flex: 1;
   min-width: 300px;
+  margin-bottom: 0;
 }
 
 .about-image img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -128,7 +132,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 5rem;
   margin-bottom: 2rem;
   flex-wrap: wrap;
 }
@@ -146,25 +150,7 @@ main {
 
 .amenities p {
   color: #333;
-}
-
-.amenities-cta {
-  display: inline-block;
-  background: #e63946;
-  padding: 12px 25px;
-  border-radius: 10px;
-  margin-top: 1rem;
-  transition: 0.3s;
-}
-
-.amenities-cta a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: capitalize;
-}
-
-.amenities-cta:hover {
-  background: #39d353;
+  line-height: 1.6;
 }
 
 .amenities-container {
@@ -188,11 +174,6 @@ main {
   margin-bottom: 10px;
 }
 
-.amenities-card h3 {
-  margin-bottom: 8px;
-  color: #111;
-}
-
 .amenities-card:hover {
   transform: translateY(-5px);
 }
@@ -204,14 +185,13 @@ main {
 
 .gallery-text {
   text-align: center;
-  width: 50%;
+  width: 60%;
   margin: 0 auto 30px;
 }
 
 .gallery-text h2 {
   color: #e63946;
   margin-bottom: 10px;
-  text-transform: capitalize;
 }
 
 .gallery-images {
@@ -226,7 +206,6 @@ main {
   object-fit: cover;
   margin-bottom: 15px;
   transition: 0.3s;
-  display: block;
 }
 
 .gallery-images img:hover {
@@ -334,97 +313,93 @@ main {
   margin: 0 auto;
 }
 
-.reason-card {
-  background: #fff;
-  padding: 25px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.reason-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
-
-.reason-card .icon {
-  font-size: 2.5rem;
-  color: #e63946;
-  margin-bottom: 15px;
-}
-
-.reason-card h3 {
-  font-size: 1.2rem;
-  color: #111;
-  margin-bottom: 10px;
-}
-
-.reason-card p {
-  font-size: 0.95rem;
-  color: #333;
-  line-height: 1.5;
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 900px) {
-  .reasons-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
-
-@media (max-width: 600px) {
-  .reasons-grid {
-    grid-template-columns: 1fr;
+/* ================= RESPONSIVE BREAKPOINTS ================= */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 120px 15px;
+    height: 80vh;
   }
 
-  .reason-card .icon {
+  .hero h2 {
     font-size: 2rem;
   }
 
-  .reason-card h3 {
-    font-size: 1.1rem;
+  .hero p {
+    font-size: 1rem;
   }
 
-  .reason-card p {
-    font-size: 0.9rem;
+  .restaurant-section {
+    padding: 50px 5%;
+  }
+
+  .gallery-text {
+    width: 80%;
   }
 }
 
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 100px 20px;
+  }
 
-/* ================= RESPONSIVE ================= */
-@media (max-width: 900px) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
   .about {
     flex-direction: column;
     text-align: center;
   }
 
-  .about-text,
-  .amenities-text {
-    width: 100%;
-  }
-
-  .restaurant-section {
-    grid-template-columns: 1fr;
+  .amenities-top {
+    flex-direction: column;
+    gap: 2rem;
     text-align: center;
-  }
-
-  .photo-container {
-    order: -1;
-  }
-
-  .gallery-text {
-    width: 100%;
-    margin-left: 0;
   }
 
   .gallery-images {
     column-count: 2;
   }
 
+  .restaurant-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .photo-container {
+    order: -1;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
   .gallery-images {
     column-count: 1;
   }
+
+  .about {
+    margin: 60px auto;
+  }
+
+  .restaurant-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .restaurant-text p {
+    font-size: 0.95rem;
+  }
+  
 }

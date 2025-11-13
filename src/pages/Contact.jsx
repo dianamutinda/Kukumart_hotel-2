@@ -48,7 +48,6 @@ const Contact = () => {
 
   return (
     <section className="contact-section">
-      <div className="container">
         <h2>Contact Us</h2>
         <p>
           We’d love to hear from you! Whether you’re planning a stay, have
@@ -111,7 +110,6 @@ const Contact = () => {
             ></iframe>
           </div>
         </div>
-      </div>
     </section>
   );
 };

@@ -26,6 +26,35 @@ body {
   color: #5a5146;
   line-height: 1.8;
 }
+/* Responsive PDF container */
+.responsive-pdf {
+  position: relative;
+  width: 100%;
+  padding-bottom: 130%; /* Aspect ratio — tweak if too tall/short */
+  height: 0;
+  overflow: hidden;
+}
+
+.responsive-pdf iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Adjust on smaller screens */
+@media (max-width: 768px) {
+  .menu-section h2 {
+    font-size: 1.9rem;
+  }
+
+  .responsive-pdf {
+    padding-bottom: 160%; /* Taller ratio for mobile */
+  }
+}
 
 .menu-viewer {
   max-width: 900px;

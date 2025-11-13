@@ -45,9 +45,14 @@ const KukumartHotel = () => {
             traditions and enriched with modern comfort, we’re more than a hotel
             — we’re a home where heritage and tranquility meet.
           </p>
-          <button className="btn" onClick={() => navigate("/rooms")}>
-            Explore More
+          <div className="buttons">
+            <button className="btn" onClick={() => navigate("/rooms")}>
+            View Rooms
           </button>
+          <button className="btn" onClick={() => navigate("/rooms")}>
+            View Menu
+          </button>
+          </div>
         </div>
       </section>
 
