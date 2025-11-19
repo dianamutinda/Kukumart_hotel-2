@@ -54,6 +54,7 @@ export default function Footer() {
             <h4>Contact Us</h4>
             <p>📍 Location: Syokimau, Machakos County, Kenya</p>
             <p>📞 Phone: <a href="tel:+254719587931">+254 719 587931</a></p>
+            <p>📞 Phone: <a href="tel:+254722759318">+254 722 755918</a></p>
             <p>✉️ Email: <a href="mailto:info@kukumarthotel.com">info@kukumarthotel.com</a></p>
             <div className="social-links">
               <a href="#"><i className="bi bi-facebook"></i></a>
