@@ -23,7 +23,7 @@ const About = () => {
         </div>
         <div className="about-image">
           <img
-            src="/assets/IMG-20250812-WA0042.jpg"
+            src="./assets/IMG_2528.png"
             alt="Kukumart Hotel Family Legacy"
           />
         </div>
