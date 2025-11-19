@@ -10,8 +10,8 @@ const About = () => {
           <h2>Where Heritage Meets Hospitality</h2>
           <p>
             Kukumart Hotel is a family-owned sanctuary where African heritage
-            and modern comfort blend seamlessly. Founded by our father and
-            lovingly nurtured by his children, our hotel is more than just a
+            and modern comfort blend seamlessly. Founded by our parents and
+            lovingly nurtured by their children, our hotel is more than just a
             place to stay—it’s a legacy of warmth, tradition, and community.
           </p>
           <p>
