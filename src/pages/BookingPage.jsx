@@ -53,7 +53,7 @@ export default function BookingPage() {
 Please confirm my booking.`;
 
     // Replace with your real WhatsApp number
-    const phoneNumber = "254712345678";
+    const phoneNumber = "254719587931";
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
 
     // Show popup
