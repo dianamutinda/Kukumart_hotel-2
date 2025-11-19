@@ -64,7 +64,7 @@ const KukumartHotel = () => {
             <h2>Where Heritage Meets Hospitality</h2>
             <p>
               At Kukumart Hotel, every corner tells a story. Founded by our
-              parents and now lovingly nurtured by his children, the hotel is
+              parents and now lovingly nurtured by their children, the hotel is
               more than a place to stay—it’s a legacy of warmth, tradition, and
               community. We blend the charm of homegrown African hospitality
               with the comforts of modern living, offering our guest a welcoming
